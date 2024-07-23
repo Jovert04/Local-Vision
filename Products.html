@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+
+    <title>Local Vision</title>
+
+    <link rel="icon" type="image/jpg" href="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,900;1,9..40,300&family=Outfit:wght@200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<script src="https://kit.fontawsome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" width="100px" height="100px" alt="Main Page">
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href="Main1.html" class="link">Home</a>
+            </li>
+            <li>
+                <a href="Clothing.html" class="link">Clothing Lines</a>
+            </li>
+            <li>    
+                <a href="branches.html" class="link">Branches</a>
+            </li>
+            <li>
+                <a href="#" class="link">About Us</a>
+            </li>
+        </ul>
+
+        <div class="search">
+            <form action="/search" method="get">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" name="query" id="search-product" placeholder="Search Products">
+                <button onclick="search()"></button>
+            </form>
+            
+            <div class="cart"><i class='bx bx-cart'></i><p id="count"></p></div>
+        </div>
+
+    </header>
+    <script src="addToCart.js"></script>
+    <section class="product">
+        <div class="ptext">
+            <h1>PRODUCTS</h1>
+        </div>  
+
+        <div class="products">
+            <div class="prow">
+                <img src="dbtk1f.jpg" alt="dbtk1front">
+                <div class="nameprice">
+                    <h4>SENSHI TEE (ACID WASH)</h4>
+                    <p>₱950.00</p>
+                    
+                </div>
+                <div id="cart">
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="dbtk2f.jpg" alt="dbtk2front">
+                <div class="nameprice">
+                    <h4>ASTEROIDS L/S TEE (BLACK)</h4>
+                    <p>₱1,100.00</p>
+                    <form method="post" action="addToCart.php">
+                        <input type="hidden" name="itemId" value="1">
+                        <input type="submit" name="submit" value="Add to Cart">
+                    </form>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="dbtk3f.jpg" alt="dbtk3front">
+                <div class="nameprice">
+                    <h4>SAKURA HOODIE</h4>
+                    <p>₱3,500.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="dbtk4.jpg" alt="dbtk4">
+                <div class="nameprice">
+                    <h4>FOLKLORE TEE (BLACK)</h4>
+                    <p>₱950.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="dbtk5f.jpg" alt="dbtk5front">
+                <div class="nameprice">
+                    <h4>BURGER KING x DBTK TEE (BLACK)</h4>
+                    <p>₱950.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+
+            <div class="prow">
+                <img src="hghmnds1.jpg" alt="hghmnds1front">
+                <div class="nameprice">
+                    <h4>TRADEMARK HOODIE BLUE</h4>
+                    <p>₱1,200.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="hghmnds2f.jpg" alt="hghmnds2front">
+                <div class="nameprice">
+                    <h4>UPSTREAM SHIRT</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="hghmnds3f.jpg" alt="hghmnds3front">
+                <div class="nameprice">
+                    <h4>ANGULAR CONCRETE SHORT</h4>
+                    <p>₱700.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="hghmnds4.jpg" alt="hghmnds4">
+                <div class="nameprice">
+                    <h4>BARBARIC LONGSLEEVES</h4>
+                    <p>₱950.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="hghmnds5f.jpg" alt="hghmnds5front">
+                <div class="nameprice">
+                    <h4>CAPITAL VARSITY JACKET</h4>
+                    <p>₱2,500.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+
+            <div class="prow">
+                <img src="und1.jpg" alt="und1">
+                <div class="nameprice">
+                    <h4>BANDANA V2 BLUE</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="und2.jpg" alt="und2">
+                <div class="nameprice">
+                    <h4>BDN LOGO BLINK</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="und3.jpg" alt="und3">
+                <div class="nameprice">
+                    <h4>BDN LOGO BLUES MESH SHORTS</h4>
+                    <p>₱900.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="und4.jpg" alt="und4">
+                <div class="nameprice">
+                    <h4>ALL TIME MESH SHORTS</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="und5.jpg" alt="und5">
+                <div class="nameprice">
+                    <h4>BLACK DIAMOND BANDANA</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+
+            <div class="prow">
+                <img src="drip1f.jpg" alt="drip1f">
+                <div class="nameprice">
+                    <h4>ATHLETIC (MOSS GREEN)</h4>
+                    <p>₱650.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="drip2f.jpg" alt="drip2f">
+                <div class="nameprice">
+                    <h4>TASTE</h4>
+                    <p>₱649.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="drip3.jpg" alt="drip3">
+                <div class="nameprice">
+                    <h4>BASIC ARC TEE (CHOCO BROWN)</h4>
+                    <p>₱600.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="drip4.jpg" alt="drip4">
+                <div class="nameprice">
+                    <h4>FLAME MESH SHORTS</h4>
+                    <p>₱749.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="drip5.jpg" alt="drip5">
+                <div class="nameprice">
+                    <h4>BANDANA MESH SHORTS</h4>
+                    <p>₱749.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+
+            <div class="prow">
+                <img src="zero1f.jpg" alt="zero1f">
+                <div class="nameprice">
+                    <h4>ELEMENTAL (GREEN)</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="zero2f.jpg" alt="zero2f">
+                <div class="nameprice">
+                    <h4>COOLING</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="zero3f.jpg" alt="zero3f">
+                <div class="nameprice">
+                    <h4>THUNDER V2</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="zero4f.jpg" alt="zero4f">
+                <div class="nameprice">
+                    <h4>CIRCLE</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="zero5f.jpg" alt="zero5f">
+                <div class="nameprice">
+                    <h4>BURNING</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+
+            <div class="prow">
+                <img src="d1.jpg" alt="dauntless1">
+                <div class="nameprice">
+                    <h4>ACID WASH (BROWN)</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="d2.jpg" alt="dauntless2">
+                <div class="nameprice">
+                    <h4>ACID WASH (BLACK)</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="d3f.jpg" alt="dauntless3f">
+                <div class="nameprice">
+                    <h4>WORLD EYE</h4>
+                    <p>₱650.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="d4f.jpg" alt="dauntlesso4f">
+                <div class="nameprice">
+                    <h4>GANESHA</h4>
+                    <p>₱650.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+    
+            <div class="prow">
+                <img src="d5f.jpg" alt="dauntless5f">
+                <div class="nameprice">
+                    <h4>HAMSA HAND</h4>
+                    <p>₱750.00</p>
+                    <i class='bx bx-cart'><button type="submit">Add to Cart</button></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="search.js"></script>
+</body>
+<footer>
+    <div class="address">
+        <h4>Address</h4>
+        <p>Purok 5, </br> Kumintang Ilaya, Batangas City 4200</p>
+        <p><a href="https://www.google.com/maps/dir/13.7629521,121.0679065/13.77821,121.06705/@13.7688964,121.0585381,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu" target="_blank">
+            <i class='bx bx-map'></i></a>13.7725779175581, 121.0660313865066</p></br>
+    </div>
+    <div class="contact">
+        <h4>Contact Us</h4>
+        <p>09636326414</p>
+        <p>Follow us on <a href="https://www.facebook.com/LocalVisionBatangasCity" target="_blank"><i class='bx bxl-facebook'></i></a></p>
+        </div>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(local.jpg);
+    background-size: cover;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 5%;
+    top: 0;
+    right: 0;
+    background-color: white;
+}
+
+.logo{
+    height: auto;
+    width: 20%;
+    padding: 5px 0px 0px 0px;
+}
+
+.menu{
+    display: flex;
+    width: 55%;
+    padding: 10px 20px 0px 0px;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Outfit', sans-serif;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: black;
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+.link:hover{
+    color: rgb(247, 20, 20);
+}
+
+.search{
+    border: 1px black;
+    display: flex;
+    align-items: right;
+    border-radius: 15px;
+}
+
+.search i{
+    margin-left: 50px;
+    color: black;
+    font-size: 27px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.search i:hover{
+    transform: scale(1.1);
+    color: rgb(247, 20, 20);;
+}
+
+.search form{
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.search form input{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 2px 2px;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(local.jpg);
+    background-blend-mode: soft-light;
+    background-position: right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+
+.texts h1{
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-top: 100px;
+    margin-left: 18px;
+}
+
+.texts h5{
+    color: red;
+    font-size: 20px;
+    font-family : 'DM Sans', sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    margin-left: 18px;
+}
+
+.main_btn{
+    color: black;
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+    margin-left: 18px;
+}
+
+.main_btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.ptext{
+    background-color: rgb(255, 255, 255);
+    margin-top: 3%;
+    margin-bottom: 5%;
+    text-align: left;
+    color: rgb(255, 0, 0);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+header.sticky{
+    background: white;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.products, .clines{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.prow,.crow{
+    position: relative;
+    transition: all 0.5s;
+}
+
+.nameprice h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nameprice p{
+    font-weight: 500;
+}
+
+.prow img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.prow img:hover{
+    transform: scale(0.9);
+}
+
+footer{
+    background-color: rgb(249, 249, 249);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+
+footer i{
+    transition: all 0.5s;
+    color: #565656;
+}
+
+footer i:hover{
+    transform: scale(1.3);
+}
+
+footer h4{
+    font-size: 16px;
+    margin: 20px 0px 15px 200px;
+    letter-spacing: 0.5px;
+}
+
+footer p{
+    color: #565656;
+    margin: 0px 0px 10px 200px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: default;
+    transition: all 0.5s;
+}
+
+.contact p{
+    color: #565656;
+    font-size: 15px;
+    margin: 20px 0px 15px 200px;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: default;
+    transition: all 0.5s;
+}
+
+.crow img{
+    width: 100%;
+    height: auto;
+}
+
+.bname h4{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.wrapper{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    transition: transform .5s ease, height .2s ease;
+    overflow: hidden;
+    margin: 9% 0 10% 38%;
+}
+
+.login{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .login{
+    transform: translateX(0);
+    transition: transform .18s ease;
+}
+
+.wrapper .close{
+    height: 45px;
+    width: 45px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wrapper .register{
+    position: absolute;
+    transform: translateX(400px);
+    transition: none;
+}
+
+.wrapper.active{
+    height: 520px;
+}
+
+.wrapper .active .login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .active .register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .active_popup{
+    transform: scale(1);
+}
+
+.login h2, .register h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.input label{
+    position: absolute;
+    font-size: 1em;
+    font-weight: 500;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: .5s;
+    pointer-events: none;
+}
+
+.input input:focus~label,
+.input input:valid~label{
+    top: -5px;
+}
+
+.input input{
+    height: 100%;
+    width: 100%;
+    padding: 0 35px 0 5px;
+    background: transparent;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+
+.input .icon{
+    right: 8px;
+    position: absolute;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.forgot{
+    font-size: .9em;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot label input{
+    margin-right: 3px;
+    accent-color: black;
+}
+
+.forgot a{
+    text-decoration: none;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.login_btn{
+    height: 45px;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+}
+
+.create{
+    font-size: .9em;
+    font-weight: 500;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.create p a{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create p a:hover{
+    text-decoration: underline;
+}
+
